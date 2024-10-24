@@ -22,6 +22,8 @@
 13. `git push (nome do repositório ou origin) (nome da branch)` => Empurra as alterações LOCAIS que fizemos na branch indicada para o repositório remoto
 14. `git pull (nome do repositório ou origin) (nome da branch)` => Puxa para a branch indicada as alterações adicionadas ao repositório que ainda não possuimos para a nossa máquina
 15. `git fetch` => Atualiza o novo histórico local com o histórico salvo no repositório remoto (atualiza novas branchs que podem ter sido criadas)
+16. `git clone <link do repositório>` => Clona um repositório remoto na nossa máquina o locando em uma pasta nova
+17. `git clone <link do repositório> .` => O ponto faz com que ele não crie uma nova pasta para colocar o clone do repositório.
 
 ## Vídeos assistidos: 
 
