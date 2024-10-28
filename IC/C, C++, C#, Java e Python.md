@@ -232,3 +232,212 @@ print("{0} tem {1} anos de idade e mede {2}m.".format(nome, idade, altura)) #Por
 print(nome,"tem",idade,"anos de idade e mede",altura,"m.")
 ```
  A f-string (f"...") permite incorporar variáveis diretamente na string.
+ 
+ ## Operadores aritméticos e relacionais:
+
+<img src="https://github.com/user-attachments/assets/3b75fe68-8b42-424c-a1ef-d2fc0dd2d0b0"  width="450">
+
+<img src="https://github.com/user-attachments/assets/8388c518-5961-4a7d-8f65-ca384b509353"  width="450">
+
+Exemplo em C:
+```c
+#include <stdio.h>
+
+int main(void) {
+  int a = 5, b = 3;
+  int soma, subt, mult, quoc, resto, inc, dec;
+  float divi;
+  
+  soma = a+b;
+  printf("%d + %d = %d\n", a, b, soma);
+  subt = a-b;
+  printf("%d - %d = %d\n", a, b, subt);  
+  mult = a*b;
+  printf("%d * %d = %d\n", a, b, mult);  
+  divi = (float)a/b;  //Dá resultado 4.5
+  printf("%f / %d = %f\n", (float)a, b, divi);  
+  quoc = a/b; // dá resultado 4 (divisão inteira)
+  printf("%d / %d = %d\n", a, b, quoc);  
+  resto= a%b;
+  printf("%d %% %d = %d\n", a, b, resto);  
+  inc = a;
+  printf("Antes do incremento o valor da variavel inc = %d.\n", inc);
+  inc++;
+  printf("Apos o incremento o valor da variavel inc = %d.\n", inc);  
+  dec = b;
+  printf("Antes do decremento o valor da variavel dec = %d.\n", dec);
+  dec--;
+  printf("Apos o decremento o valor da variavel dec = %d.\n", dec);
+  return 0;
+}
+```
+
+Exemplo em C++:
+```c++
+#include <iostream>
+using namespace std;
+
+int main(void) {
+  int a = 5, b = 3;
+  int soma, subt, mult, quoc, resto, inc, dec;
+  float divi;
+  
+  soma = a+b;
+  cout << a << " + " << b << " = " << soma << "\n";
+  subt = a-b;
+  cout << a << " - " << b << " = " << subt << "\n";
+  mult = a*b;
+  cout << a << " * " << b << " = " << mult << "\n";
+  divi = (float)a/b;
+  cout << a << " / " << b << " = " << divi << "\n";
+  quoc = a/b;
+  cout << a << " / " << b << " = " << quoc << "\n";
+  resto= a%b;
+  cout << a << " % " << b << " = " << resto << "\n";
+  inc = a;
+  cout << "Antes do incremento o valor da variavel inc = " << inc << ".\n";
+  inc++;
+  cout << "Apos do incremento o valor da variavel inc = " << inc << ".\n";
+  dec = b;
+  cout << "Antes do decremento o valor da variavel inc = " << dec << ".\n";
+  dec--;
+  cout << "Apos o decremento o valor da variavel inc = " << dec << ".\n";
+  return 0;
+}
+```
+
+Exemplo em C#:
+```c#
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    int a = 5, b = 3;
+    int soma, subt, mult, quoc, resto, inc, dec;
+    float divi;
+  
+    soma = a+b;
+    Console.WriteLine(a+" + "+b+" = "+soma);
+    subt = a-b;
+    Console.WriteLine(a+" - "+b+" = "+subt);
+    mult = a*b;
+    Console.WriteLine(a+" * "+b+" = "+mult);
+    divi = (float)a/b;
+    Console.WriteLine((float)a+" / "+b+" = "+divi);
+    quoc = a/b;
+    Console.WriteLine(a+" / "+b+" = "+quoc);
+    resto= a%b;
+    Console.WriteLine(a+" % "+b+" = "+resto);
+    inc = a;
+    Console.WriteLine("Antes do incremento o valor da variavel inc = "+inc);
+    inc++;
+    Console.WriteLine("Apos o incremento o valor da variavel inc = "+inc);  
+    dec = b;
+    Console.WriteLine("Antes do decremento o valor da variavel dec = "+dec);
+    dec--;
+    Console.WriteLine("Apos o decremento o valor da variavel dec = "+dec);
+  }
+}
+```
+
+Exemplo em Java:
+```java
+class Main {
+  public static void main(String[] args) {
+    int a = 5, b = 3;
+    int soma, subt, mult, quoc, resto, inc, dec;
+    float divi;
+  
+    soma = a+b;
+    System.out.println(a+" + "+b+" = "+soma);
+    subt = a-b;
+    System.out.println(a+" - "+b+" = "+subt);
+    mult = a*b;
+    System.out.println(a+" * "+b+" = "+mult);
+    divi = (float)a/b;
+    System.out.println((float)a+" / "+b+" = "+divi);
+    quoc = a/b;
+    System.out.println(a+" / "+b+" = "+quoc);
+    resto= a%b;
+    System.out.println(a+" % "+b+" = "+resto);
+    inc = a;
+    System.out.println("Antes do incremento o valor da variavel inc = "+inc);
+    inc++;
+    System.out.println("Apos o incremento o valor da variavel inc = "+inc);  
+    dec = b;
+    System.out.println("Antes do decremento o valor da variavel dec = "+dec);
+    dec--;
+    System.out.println("Apos o decremento o valor da variavel dec = "+dec);
+  }
+}
+```
+
+Exemplo em Python:
+```python
+a = 5 #Não há necessidade de tipigem de variáveis 
+b = 3
+   
+soma = a+b
+print(a," + ",b," = ",soma)
+subt = a-b
+print(a," - ",b," = ",subt)
+mult = a*b
+print(a," * ",b," = ",mult)
+divi = a/b  #Divisão exata com casa decimal
+print(a," / ",b," = ",divi)
+quoc = a//b #Divisão inteira
+print(a," // ",b," = ",quoc)
+resto = a%b  #Resto
+print(a," % ",b," = ",resto)
+inc = a
+print("Antes do incremento o valor da variavel inc = ",inc)
+inc += 1 #Incremento
+print("Apos o incremento o valor da variavel inc = ",inc)
+dec = b
+print("Antes do decremento o valor da variavel dec = ",dec)
+dec -= 1
+print("Apos o decremento o valor da variavel dec = ",dec)
+```
+
+## Comandos de fluxo de código
+
+#### IF:
+* Em python, os blocos de comandos de cada if são identificado pela identação, sem necessidade de chaves
+<img src="https://github.com/user-attachments/assets/770cdac6-cc74-458e-b32c-54ff3dad6778"  width="300">
+
+```python
+
+if condição:
+        <bloco de comandos>
+
+if condição:
+        <bloco de comandos>
+else:
+        <bloco de comandos>
+
+if condição:
+        <bloco de comandos>
+elif condição:
+        <bloco de comandos>
+...
+elif condição:     #Tipo de else if
+  <bloco de comandos>
+else:
+    <bloco de comandos> 
+```
+
+Exemplos:
+
+<img src="https://github.com/user-attachments/assets/b9185c35-2430-4be6-8123-d8ffdabcd089"  width="300">
+<img src="https://github.com/user-attachments/assets/10d85d6c-6b28-4277-81de-c98a54585929"  width="300">
+<img src="https://github.com/user-attachments/assets/6c3bdc98-b3ed-4c35-a2f6-605de0561762"  width="300">
+<img src="https://github.com/user-attachments/assets/1bb42093-469a-4d47-a6bd-a0d516b643e3"  width="300">
+<img src="https://github.com/user-attachments/assets/0faedede-fadb-45d3-a0a7-4c475cae2c19"  width="300">
+
+## Comandos de Repetição:
+
+<img src="https://github.com/user-attachments/assets/7ef6711e-4aa4-4bee-9f90-7e4dbe98975f"  width="300">
+<img src="https://github.com/user-attachments/assets/dac81209-24d3-436b-8979-ab3e3cfbef96"  width="300">
+<img src="https://github.com/user-attachments/assets/db82f831-53cb-45e0-a9f5-35321f18073e"  width="300">
+<img src="https://github.com/user-attachments/assets/97a1d19b-d403-49eb-943e-29ca440944e7"  width="300">
+<img src="https://github.com/user-attachments/assets/8a5422c7-a0a7-47e3-8f4b-eb9d4470825e"  width="300">
