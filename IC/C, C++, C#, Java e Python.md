@@ -441,3 +441,5 @@ Exemplos:
 <img src="https://github.com/user-attachments/assets/db82f831-53cb-45e0-a9f5-35321f18073e"  width="300">
 <img src="https://github.com/user-attachments/assets/97a1d19b-d403-49eb-943e-29ca440944e7"  width="300">
 <img src="https://github.com/user-attachments/assets/8a5422c7-a0a7-47e3-8f4b-eb9d4470825e"  width="300">
+
+
