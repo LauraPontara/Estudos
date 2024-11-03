@@ -19,11 +19,13 @@
 10. `git branch -b (nome da nova branch)` => Cria uma nova branch A PARTIR DO HISTÓRICO DA BRANCH ATUAL QUE ESTAMOS
 11. `git checkout (nome da branch)` => Muda a linha de trabalho da branch atual que você está para a branch indicada
 12. `git remote add (nome) <url do repositório>` => Víncula um novo repositório remoto como o GitHub
-13. `git push (nome do repositório ou origin) (nome da branch)` => Empurra as alterações LOCAIS que fizemos na branch indicada para o repositório remoto
-14. `git pull (nome do repositório ou origin) (nome da branch)` => Puxa para a branch indicada as alterações adicionadas ao repositório que ainda não possuimos para a nossa máquina
-15. `git fetch` => Atualiza o novo histórico local com o histórico salvo no repositório remoto (atualiza novas branchs que podem ter sido criadas)
-16. `git clone <link do repositório>` => Clona um repositório remoto na nossa máquina o locando em uma pasta nova
-17. `git clone <link do repositório> .` => O ponto faz com que ele não crie uma nova pasta para colocar o clone do repositório.
+13. `git remote -v` => Mostra o link do repositório o qual está associado, para onde irão as alterações se der commit (-v de verbose)
+14. `git remote remove <nome do repositório ou origin>` => Remove o repositório vinculado ao projeto (add um novo repositório para dar commit)
+15. `git push (nome do repositório ou origin) (nome da branch)` => Empurra as alterações LOCAIS que fizemos na branch indicada para o repositório remoto
+16. `git pull (nome do repositório ou origin) (nome da branch)` => Puxa para a branch indicada as alterações adicionadas ao repositório que ainda não possuimos para a nossa máquina
+17. `git fetch` => Atualiza o novo histórico local com o histórico salvo no repositório remoto (atualiza novas branchs que podem ter sido criadas)
+18. `git clone <link do repositório>` => Clona um repositório remoto na nossa máquina o locando em uma pasta nova
+19. `git clone <link do repositório> .` => O ponto faz com que ele não crie uma nova pasta para colocar o clone do repositório.
 
 ## Vídeos assistidos: 
 
